@@ -1,8 +1,28 @@
 aid: brine-tanx
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/brine-tanx.png
 name: Brine (Tanx)
-description: 'Brine (Tanx) is a company surfaced as a portfolio company of pantera-capital and added to
-  the API Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Brine — now rebranded as tanX — is a cross-chain, self-custodial orderbook
+  decentralized exchange (DEX) built on StarkWare's StarkEx Layer-2 scaling
+  engine. It combines the trustless, non-custodial security of a DEX with the
+  speed and low fees of a centralized exchange: gasless trading, rapid off-chain
+  order execution with on-chain settlement, cross-chain deposits and withdrawals,
+  and simple APIs for programmatic trading. The company is backed by Pantera
+  Capital and is repositioning around "a secure and compliant future for crypto."
+  This API Evangelist profile was seeded from Pantera Capital's portfolio and
+  enriched by the pipeline; as of this pass the public REST API host is no longer
+  reachable and the developer surface is limited to the GitBook documentation.
 url: https://raw.githubusercontent.com/api-evangelist/brine-tanx/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Crypto
+- Decentralized Exchange
+- DeFi
+- Blockchain
+- Trading
+- StarkEx
+- Cross-chain
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +50,19 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://tanx.fi/
+- type: Website
   url: https://www.brine.fi/
+- type: Documentation
+  url: https://docs.tanx.fi/
+- type: DeveloperPortal
+  url: https://docs.tanx.fi/
+- type: GitHubOrganization
+  url: https://github.com/brine-fi
+- type: DomainSecurity
+  url: security/brine-tanx-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
